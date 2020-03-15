@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		E4D1105B24140E6900BF77AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D1105A24140E6900BF77AB /* AppDelegate.swift */; };
 		E4D1105D24140E6900BF77AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D1105C24140E6900BF77AB /* SceneDelegate.swift */; };
-		E4D1105F24140E6900BF77AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D1105E24140E6900BF77AB /* ViewController.swift */; };
+		E4D1105F24140E6900BF77AB /* RecordAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D1105E24140E6900BF77AB /* RecordAudioViewController.swift */; };
 		E4D1106224140E6900BF77AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D1106024140E6900BF77AB /* Main.storyboard */; };
 		E4D1106424140E6A00BF77AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D1106324140E6A00BF77AB /* Assets.xcassets */; };
 		E4D1106724140E6A00BF77AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D1106524140E6A00BF77AB /* LaunchScreen.storyboard */; };
+		E4D1106F241589C300BF77AB /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D1106E241589C300BF77AB /* AudioRecorder.swift */; };
+		E4D11074241596D100BF77AB /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D11073241596D100BF77AB /* PlaySoundsViewController.swift */; };
+		E4D110782415D4A300BF77AB /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D110772415D4A300BF77AB /* PlaySoundsViewController+Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E4D1105724140E6900BF77AB /* PitchPerfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D1105A24140E6900BF77AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4D1105C24140E6900BF77AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E4D1105E24140E6900BF77AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E4D1105E24140E6900BF77AB /* RecordAudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAudioViewController.swift; sourceTree = "<group>"; };
 		E4D1106124140E6900BF77AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4D1106324140E6A00BF77AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4D1106624140E6A00BF77AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4D1106824140E6A00BF77AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4D1106E241589C300BF77AB /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		E4D11073241596D100BF77AB /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		E4D110772415D4A300BF77AB /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		E4D1105924140E6900BF77AB /* PitchPerfect */ = {
 			isa = PBXGroup;
 			children = (
+				E4D110722415966E00BF77AB /* audio */,
+				E4D110712415964000BF77AB /* storyboard */,
+				E4D110702415961C00BF77AB /* viewController */,
 				E4D1105A24140E6900BF77AB /* AppDelegate.swift */,
 				E4D1105C24140E6900BF77AB /* SceneDelegate.swift */,
-				E4D1105E24140E6900BF77AB /* ViewController.swift */,
-				E4D1106024140E6900BF77AB /* Main.storyboard */,
 				E4D1106324140E6A00BF77AB /* Assets.xcassets */,
-				E4D1106524140E6A00BF77AB /* LaunchScreen.storyboard */,
 				E4D1106824140E6A00BF77AB /* Info.plist */,
 			);
 			path = PitchPerfect;
+			sourceTree = "<group>";
+		};
+		E4D110702415961C00BF77AB /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				E4D1105E24140E6900BF77AB /* RecordAudioViewController.swift */,
+				E4D11073241596D100BF77AB /* PlaySoundsViewController.swift */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		E4D110712415964000BF77AB /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E4D1106024140E6900BF77AB /* Main.storyboard */,
+				E4D1106524140E6A00BF77AB /* LaunchScreen.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		E4D110722415966E00BF77AB /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				E4D1106E241589C300BF77AB /* AudioRecorder.swift */,
+				E4D110772415D4A300BF77AB /* PlaySoundsViewController+Audio.swift */,
+			);
+			path = audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4D1105F24140E6900BF77AB /* ViewController.swift in Sources */,
+				E4D1105F24140E6900BF77AB /* RecordAudioViewController.swift in Sources */,
+				E4D110782415D4A300BF77AB /* PlaySoundsViewController+Audio.swift in Sources */,
 				E4D1105B24140E6900BF77AB /* AppDelegate.swift in Sources */,
+				E4D1106F241589C300BF77AB /* AudioRecorder.swift in Sources */,
+				E4D11074241596D100BF77AB /* PlaySoundsViewController.swift in Sources */,
 				E4D1105D24140E6900BF77AB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WMR49S5D8M;
 				INFOPLIST_FILE = PitchPerfect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WMR49S5D8M;
 				INFOPLIST_FILE = PitchPerfect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
